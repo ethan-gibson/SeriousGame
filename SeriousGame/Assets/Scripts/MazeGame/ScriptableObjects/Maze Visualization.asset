@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f7e65820159442e9f6c1f0259ae9440, type: 3}
+  m_Name: Maze Visualization
+  m_EditorClassIdentifier: Assembly-CSharp::MazeGame.MazeVisualization
+  end: {fileID: 4729947887603987817, guid: 776f4bc09c3f3f6448733647a8a26c60, type: 3}
+  straight: {fileID: 8124241060048816004, guid: 819d41246d4a63f44aecfff4a075217e, type: 3}
+  corner: {fileID: 7861803006079606860, guid: c03aaff7e5917304a9f0c1cdc755fc37, type: 3}
+  tJunction: {fileID: 4937960939626696237, guid: f9ef47cd036a5c7418e56e4e51ad0e67, type: 3}
+  xJunction: {fileID: 7912333560869884593, guid: 9189108392fe09e409cdca2ed1e04acd, type: 3}
