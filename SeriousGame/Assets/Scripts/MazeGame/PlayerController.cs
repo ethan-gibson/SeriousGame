@@ -24,8 +24,6 @@ public class PlayerController : MonoBehaviour
 	private Vector2 currentVelocity;
 	private Vector2 lookInput;
 	private float lookXRotation;
-	private bool playingSound;
-	private AudioSource audioSource;
 
 	public delegate void MoveInputEvent(Vector2 _direction);
 
@@ -42,7 +40,6 @@ public class PlayerController : MonoBehaviour
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 		playerInput = GetComponent<PlayerInput>();
-		audioSource = GetComponent<AudioSource>();
 		setInputActions();
 	}
 
@@ -78,19 +75,6 @@ public class PlayerController : MonoBehaviour
 	{
 		if (controller.enabled) { controller.Move(velocity * Time.deltaTime); }
 		setRotation();
-		if (velocity.magnitude > 1 && !playingSound)
-		{
-			audioSource.Play();
-			playingSound = true;
-		}
-		else if (velocity.magnitude < 1 && playingSound)
-		{
-			if (audioSource.time >= audioSource.clip.length - 0.1f)
-			{
-				playingSound = false;
-				audioSource.Stop();
-			}
-		}
 	}
 
 	private void FixedUpdate()
@@ -122,5 +106,14 @@ public class PlayerController : MonoBehaviour
 	{
 		currentDirection = Vector2.SmoothDamp(currentDirection, new(movementDirection.x, movementDirection.z), ref currentVelocity, moveSmoothTime);
 		velocity = (transform.forward * currentDirection.y + transform.right * currentDirection.x) * walkSpeed + Vector3.up * velocity.y;
+	}
+
+	private void OnTriggerEnter(Collider _other)
+	{
+		if (!_other.gameObject.CompareTag("PickUp")) { return; }
+		Debug.Log("Hit PickUp");
+		_other.gameObject.TryGetComponent<PointPickUp>(out var _pointPickUp);
+		Debug.Log(_pointPickUp);
+		if (_pointPickUp) { _pointPickUp.Trigger(); }
 	}
 }

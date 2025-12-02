@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1758901732159426863}
   - component: {fileID: 4463459350265557844}
   - component: {fileID: 3400574004313853738}
-  - component: {fileID: 102651602719277500}
-  m_Layer: 0
+  - component: {fileID: 5943469575819540909}
+  m_Layer: 3
   m_Name: Floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,8 +90,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &102651602719277500
-MeshCollider:
+--- !u!65 &5943469575819540909
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,10 +108,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2146504511776052463
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,8 +122,8 @@ GameObject:
   - component: {fileID: 1398308650241170864}
   - component: {fileID: 6715909408055106403}
   - component: {fileID: 2255347681227244032}
-  - component: {fileID: 638979615259558376}
-  m_Layer: 0
+  - component: {fileID: 1044011179390429308}
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,8 +201,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &638979615259558376
-MeshCollider:
+--- !u!65 &1044011179390429308
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -220,10 +219,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2363914745116205950
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,9 +232,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7033754380912981334}
   - component: {fileID: 8124241060048816004}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Straight
-  m_TagString: Untagged
+  m_TagString: MazeObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,7 +280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3122199495247136969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Quad2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +314,7 @@ GameObject:
   - component: {fileID: 334928175890271583}
   - component: {fileID: 3081287269902444297}
   - component: {fileID: 9134043409058922980}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,8 +425,8 @@ GameObject:
   - component: {fileID: 2509567730954854782}
   - component: {fileID: 2787657754567152681}
   - component: {fileID: 8398593299204440293}
-  - component: {fileID: 9152954390230787987}
-  m_Layer: 0
+  - component: {fileID: 4547274386179464760}
+  m_Layer: 3
   m_Name: Floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,8 +504,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &9152954390230787987
-MeshCollider:
+--- !u!65 &4547274386179464760
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -524,10 +522,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6999195111013720568
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +537,7 @@ GameObject:
   - component: {fileID: 5429067568733951171}
   - component: {fileID: 2758769262239878893}
   - component: {fileID: 8201428838578854886}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6066689169463391655}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Quad1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

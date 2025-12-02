@@ -28,9 +28,9 @@ namespace MazeGame
 		private (MazeCellObject, int) getPrefab(MazeFlags _flags) => _flags switch
 		{
 			MazeFlags.PassageN => (end, 0),
-			MazeFlags.PassageW => (end, 1),
-			MazeFlags.PassageE => (end, 2),
-			MazeFlags.PassageS => (end, 3),
+			MazeFlags.PassageE => (end, 1),
+			MazeFlags.PassageS => (end, 2),
+			MazeFlags.PassageW => (end, 3),
 
 			MazeFlags.PassageN | MazeFlags.PassageS => (straight, 0),
 			MazeFlags.PassageE | MazeFlags.PassageW => (straight, 1),

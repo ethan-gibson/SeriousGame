@@ -23,7 +23,7 @@ namespace MazeGame
 		{
 			int2 _coords;
 			_coords.y = _index / size.x;
-			_coords.x = _index % size.x;
+			_coords.x = _index - size.x * _coords.y;
 			return _coords;
 		}
 
