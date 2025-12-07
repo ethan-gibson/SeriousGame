@@ -991,6 +991,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Rhythm",
+            "id": "c4763970-0706-48e8-a44f-b6245cef33c0",
+            "actions": [
+                {
+                    "name": "TopTrack",
+                    "type": "Button",
+                    "id": "717446ee-5381-45ea-8b3e-40094d0fca0f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BottomTrack",
+                    "type": "Button",
+                    "id": "8b84a5f2-3dfb-4812-b58e-942f179dcf5a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b38303f7-c4b0-4a19-8f5a-444ebdb66edf",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "TopTrack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b97e4b2c-a456-4797-aec0-14246a75e1f6",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "BottomTrack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

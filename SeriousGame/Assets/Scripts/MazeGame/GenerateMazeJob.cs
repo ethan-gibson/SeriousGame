@@ -53,10 +53,7 @@ namespace MazeGame
 					_activeIndices[++_lastActiveIndex] = _passage.Item1;
 				}
 			}
-			if (OpenDeadEndProbability > 0f)
-			{
-				openDeadEnds(_random, _scratchpad);
-			}
+			if (OpenDeadEndProbability > 0f) { openDeadEnds(_random, _scratchpad); }
 		}
 
 		private int findAvailablePassages(int _index, NativeArray<(int, MazeFlags, MazeFlags)> _scratchpad)
