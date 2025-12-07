@@ -12,6 +12,8 @@ public class Conductor : MonoBehaviour
     private float songTime;
     private float timeInBeats;
 
+    private bool isPlaying;
+
     private void Awake()
     {
         if (Instance)
@@ -20,19 +22,26 @@ public class Conductor : MonoBehaviour
             return;
         }
         Instance = this;
-        
-        secPerBeat = songBpm / 60f;
+
+        secPerBeat = 60f / songBpm;
     }
 
     private void Update()
     {
+        if (!isPlaying) { return; }
         songTime += Time.deltaTime;
         timeInBeats = songTime / secPerBeat;
+        Debug.Log(timeInBeats);
+    }
+
+    public void StartTrack()
+    {
+        isPlaying = true;
     }
 
     public float GetSongBpm()
     {
-        return secPerBeat;
+        return songBpm;
     }
 
     public float GetSongTime()

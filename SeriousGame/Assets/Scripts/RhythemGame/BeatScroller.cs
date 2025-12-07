@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class BeatScroller : MonoBehaviour
@@ -8,7 +7,7 @@ public class BeatScroller : MonoBehaviour
 
 	private void Start()
 	{
-		tempo = Conductor.Instance.GetSongBpm();
+		tempo = Conductor.Instance.GetSongBpm() / 5;
 	}
 
 	private void Update()

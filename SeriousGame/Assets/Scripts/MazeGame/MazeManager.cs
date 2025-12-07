@@ -120,7 +120,6 @@ public class MazeManager : MonoBehaviour
 				var _mazeObjects = GameObject.FindGameObjectsWithTag("MazeObject");
 				var _pointObjects = GameObject.FindGameObjectsWithTag("PickUp");
 				foreach (var _variable in _mazeObjects) { _variable.SetActive(false); }
-				foreach (var _variable in _pointObjects) { _variable.SetActive(false); }
 				maze = new Maze(mazeSize);
 				new GenerateMazeJob
 				{
